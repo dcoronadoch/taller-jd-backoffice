@@ -1,0 +1,101 @@
+.login-page {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  background-image: linear-gradient(
+      rgba(239, 230, 218, 0.78),
+      rgba(239, 230, 218, 0.78)
+    ),
+    url("../assets/fondo-taller.jpg");
+  background-size: cover;
+  background-position: center 70%;
+}
+
+.login-card {
+  width: min(100%, 440px);
+  background: var(--color-blanco);
+  border-radius: 18px;
+  padding: 38px 36px 28px;
+  box-shadow: var(--sombra), 0 20px 50px rgba(0, 0, 0, 0.12);
+}
+
+.login-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 28px;
+}
+
+.login-brand img {
+  height: 46px;
+  width: auto;
+}
+
+.login-brand strong {
+  display: block;
+  font-family: var(--fuente-logo);
+  font-size: 1.25rem;
+  color: var(--color-titulo);
+  line-height: 1.2;
+}
+
+.login-brand strong span {
+  color: var(--color-primario);
+}
+
+.login-brand small {
+  color: #6b7280;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 0.72rem;
+  font-weight: bold;
+}
+
+.login-card h1 {
+  font-family: var(--fuente-titulos);
+  font-size: 2rem;
+  margin-bottom: 6px;
+}
+
+.login-intro {
+  margin-bottom: 26px;
+  color: #6b7280;
+}
+
+.password-wrap {
+  position: relative;
+}
+
+.password-wrap input {
+  padding-right: 92px;
+}
+
+.password-toggle {
+  position: absolute;
+  top: 50%;
+  right: 8px;
+  transform: translateY(-50%);
+  border: none;
+  background: none;
+  color: var(--color-secundario);
+  font-weight: bold;
+  font-size: 0.85rem;
+  padding: 6px 10px;
+}
+
+.password-toggle:hover {
+  color: var(--color-primario);
+}
+
+.login-card .btn-block {
+  margin-top: 6px;
+  padding: 15px;
+}
+
+.login-footer {
+  margin-top: 26px;
+  text-align: center;
+  font-size: 0.78rem;
+  color: #9ca3af;
+}

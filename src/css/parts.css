@@ -1,0 +1,164 @@
+/*==================================================
+    Repuestos, marcas y categorías
+    (se apoya en users.css: .page, .card, .table, .badge, .form-grid)
+==================================================*/
+
+.modal-wide {
+  width: min(100%, 680px);
+}
+
+/*---------------- Filtros ----------------*/
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 18px;
+}
+
+.filters select {
+  padding: 9px 12px;
+  border: 1px solid var(--color-gris);
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 0.92rem;
+  background: var(--superficie);
+  max-width: 100%;
+}
+
+.filters select:focus {
+  border-color: var(--color-primario);
+  outline: none;
+  box-shadow: 0 0 8px rgba(220, 38, 38, 0.2);
+}
+
+/*---------------- Tabla de repuestos ----------------*/
+
+.thumb {
+  width: 48px;
+  height: 48px;
+  border-radius: 8px;
+  object-fit: cover;
+  background: var(--color-claro);
+  border: 1px solid var(--color-gris);
+}
+
+.thumb-empty {
+  display: grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 8px;
+  background: var(--color-claro);
+  border: 1px dashed var(--color-gris);
+  color: #9ca3af;
+  font-size: 1.2rem;
+}
+
+.cell-main strong {
+  display: block;
+  color: var(--color-titulo);
+}
+
+.cell-main small {
+  color: #6b7280;
+}
+
+.num {
+  text-align: right !important;
+  white-space: nowrap;
+}
+
+.stock-low {
+  color: var(--color-error);
+  font-weight: bold;
+}
+
+/*---------------- Campos extra ----------------*/
+
+.field textarea {
+  width: 100%;
+  min-height: 90px;
+  resize: vertical;
+  padding: 13px 14px;
+  border: 1px solid var(--color-gris);
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: inherit;
+  color: var(--color-titulo);
+  background: var(--superficie);
+  transition: var(--transicion);
+}
+
+.field textarea:focus {
+  border-color: var(--color-primario);
+  outline: none;
+  box-shadow: 0 0 8px rgba(220, 38, 38, 0.2);
+}
+
+.field-check {
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.field-check input {
+  width: auto;
+}
+
+.field-check label {
+  font-weight: normal;
+}
+
+/*---------------- Imágenes del repuesto ----------------*/
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 14px;
+  margin-bottom: 22px;
+}
+
+.image-card {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid var(--color-gris);
+  border-radius: 10px;
+  background: var(--superficie);
+}
+
+.image-card img {
+  width: 100%;
+  height: 110px;
+  object-fit: cover;
+  background: var(--color-claro);
+}
+
+.image-card .badge {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+}
+
+.image-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 8px;
+}
+
+.image-actions .btn {
+  width: 100%;
+}
+
+.add-image {
+  padding-top: 16px;
+  border-top: 1px solid var(--color-claro);
+}
+
+@media (max-width: 600px) {
+  .filters select {
+    width: 100%;
+  }
+}
